@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Krona+One&family=Kumbh+Sans:wght@500;600&display=swap");
+:root {
+  --clr-black: #0d0d0d;
+  --clr-black-light: #1a1a1a;
+  --clr-black-lighter: #171717;
+
+  --clr-gray: #727272;
+  --clr-gray-light: #8b8b8b;
+
+  --clr-white: #ffffff;
+  --clr-blue: #455ce9;
+
+  --fs-numbering: 2rem;
+  --fs-sub-heading: 1.5rem;
+  --fs-heading: 5rem;
+
+  --ff-normal: "Kumbh Sans", sans-serif;
+  --ff-bold: "Krona One", sans-serif;
+
+  --animation-primary: 0.5s cubic-bezier(0.3, 1, 0.3, 1);
+  --animation-nav: 0.5s cubic-bezier(0.6, 0, 0.4, 1);
+  --animation-smooth: 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-bold);
+}

@@ -1,0 +1,64 @@
+.biodata {
+  display: grid;
+  grid-template-columns: 3.75rem 1fr;
+  align-items: start;
+  justify-content: start;
+  cursor: pointer;
+
+  gap: 1.5rem;
+  padding: 2rem;
+
+  position: relative;
+  opacity: 1;
+
+  transition: 0.5s;
+  transform: translateY(0%);
+
+  border-bottom: 1px solid var(--clr-gray-light);
+
+  @media (hover: hover) {
+    &:hover {
+      translate: 3% 0%;
+    }
+  }
+
+  &.hidden {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  &__container {
+    display: grid;
+    gap: 0rem;
+    width: 100%;
+
+    position: relative;
+  }
+
+  .numbering {
+    color: var(--clr-black-lighter);
+    font-family: var(--ff-bold);
+    font-size: var(--fs-numbering);
+  }
+
+  .content {
+    font-family: var(--ff-normal);
+    font-size: 1.25rem;
+
+    .question {
+      color: var(--clr-black-lighter);
+    }
+    .answer {
+      line-height: 1.5;
+      color: var(--clr-gray);
+      margin-top: 0.75rem;
+    }
+  }
+
+  @include max-width(phone) {
+    & {
+      grid-template-columns: 1fr;
+      padding-inline: 0;
+    }
+  }
+}

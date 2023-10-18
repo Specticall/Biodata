@@ -1,0 +1,13 @@
+@mixin max-width($dimension) {
+  @if $dimension == tablet {
+    @media (max-width: 820px) {
+      @content;
+    }
+  }
+
+  @if $dimension == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+}
