@@ -1,9 +1,17 @@
 import { useEffect, useRef, useState } from "react";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 
-export default function Biodata({ userBiodata, userData }) {
+export default function Biodata({
+  userBiodata,
+  userData,
+  setSelectedUser,
+  selectedUser,
+}) {
   const cardRef = useRef([]);
   const [isVisible, setIsVisible] = useState([]);
-  const [selectedUser, setSelectedUser] = useState("002");
+  // const [selectedUser, setSelectedUser] = useState("001");
+
+  // console.log(scroll.init);
 
   // Find the biodata from the selected user ID
   const currentBiodata =
@@ -20,6 +28,9 @@ export default function Biodata({ userBiodata, userData }) {
   };
 
   useEffect(() => {
+    // console.log("RENDER");
+    const elements = document.querySelectorAll(".biodata");
+
     const observer = new IntersectionObserver((entries) => {
       const inView = entries?.map((entry) =>
         entry.isIntersecting
@@ -32,14 +43,22 @@ export default function Biodata({ userBiodata, userData }) {
       );
     });
 
-    cardRef.current?.forEach((current) =>
+    elements?.forEach((current) =>
       observer.observe(current)
     );
 
-    return () =>
-      cardRef.current?.forEach((current) =>
-        observer.unobserve(current)
-      );
+    return () => {
+      // console.log("run");
+
+      observer.disconnect();
+      // elements?.forEach((current) =>
+      //   observer.unobserve(current)
+      // );
+
+      // console.log(elements);
+
+      // cardRef.current = [];
+    };
   }, [selectedUser]);
 
   const toggleVisibility = (element) => {
@@ -141,8 +160,8 @@ function TitleQnA({ userBiodata = [] }) {
 function CardQnA({ userBiodata, cardRef, isVisible }) {
   return (
     <ul className="biodata__container">
-      {userBiodata.map((biodata, i) =>
-        i > 1 ? (
+      {userBiodata.map((biodata, i) => {
+        return i > 1 ? (
           <li
             className={`biodata ${
               isVisible.find((x) => x === `biodata-${i}`)
@@ -150,9 +169,9 @@ function CardQnA({ userBiodata, cardRef, isVisible }) {
                 : "hidden"
             } biodata-${i}`}
             key={biodata.question + i}
-            ref={(element) => {
-              cardRef.current[i] = element;
-            }}
+            // ref={(element) => {
+            //   cardRef.current[i] = element;
+            // }}
           >
             <div className="numbering">{`${
               i - 1 < 10 ? 0 : ""
@@ -164,8 +183,8 @@ function CardQnA({ userBiodata, cardRef, isVisible }) {
               <p className="answer">A : {biodata.answer}</p>
             </div>
           </li>
-        ) : null
-      )}
+        ) : null;
+      })}
     </ul>
   );
 }

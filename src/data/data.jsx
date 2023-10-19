@@ -1,61 +1,3 @@
-// export const userBiodata = [
-//   {
-//     nama: "Jeson Adhi Dharma",
-//     jabatan: "Chief Marketing Officer",
-//     angkatan: "B26",
-//   },
-//   { question: "Umur", answer: 19 },
-//   {
-//     question: "Tempat, tanggal lahir",
-//     answer: "Jakarta, 25 Desember 2004",
-//   },
-//   { question: "Jurusan", answer: "Compsci Statistika" },
-//   { question: "Hobi", answer: "Tidur (6 jam 15 Menit)" },
-//   {
-//     question: "Matkul Kesukaan",
-//     answer: "Teori of statistics 1",
-//   },
-//   {
-//     question: "Kenapa Pilih Jurusan",
-//     answer:
-//       "Suka statistics sejak SMA, terus lihat ada prospek",
-//   },
-//   {
-//     question: "Tips Belajar",
-//     answer:
-//       "Kalo lagi belajar fokus, pas di kelas dengerin sampe dirumah review setelah belajar baru organisasi",
-//   },
-//   {
-//     question: "Kenapa join BNCC",
-//     answer:
-//       "Soalnya dulu SMA AFK jadi ga ada skill managing team, ngomong di depan umum.",
-//   },
-//   {
-//     question: "Value dari BNCC",
-//     answer:
-//       "Relasi, ketemu banyak orang keren. Soft skill seperti time management dan ngomong sama orang lain.",
-//   },
-//   {
-//     question: "Event paling terkesan",
-//     answer:
-//       "Product Development Conference di mandiri tower.",
-//   },
-//   {
-//     question: "Pernah Ikut Aslab / IT DIV",
-//     answer:
-//       "Aslab skip, IT Div ambil logic test tapi ketinggalan.",
-//   },
-//   {
-//     question: "Kalo bisa balik ke masa lalu, advicenya",
-//     answer: "Jangan buang2 waktu.",
-//   },
-//   { question: "Course LnT", answer: "Mobile App dev." },
-//   {
-//     question: "Quest cavis",
-//     answer: "Poster, backend, article",
-//   },
-// ];
-
 //prettier-ignore
 export const userBiodata = [
   {
@@ -81,7 +23,7 @@ export const userBiodata = [
   {
     id: "002",
     data: [
-      { nama: "Gustavo Hoze Ercolesea", jabatan: "PR Manager", angkatan: "B26" },
+      { nama: "Gustavo Hoze Ercolesea", jabatan: "Public Relations Manager", angkatan: "B26" },
       { question: "Umur", answer: 19 },
       { question: "Tempat, tanggal lahir", answer: "Surakarta, 1 Agustus 2004" },
       { question: "Jurusan", answer: "Computer Science" },
@@ -94,5 +36,126 @@ export const userBiodata = [
       { question: "Moto", answer: "\"I have fought a good fight, I have finished the race, I have kept the faith.\"" }
     ],
     
+  },
+  {
+    id:"003",
+    data: [
+      { nama: "Jessilyn Amanda Mulyawan", jabatan: "Learning and Training Staff", angkatan: "B26" },
+      { question: "Alasan Bergabung dengan BNCC", answer: "Aku bergabung dengan BNCC karena ingin mendapatkan benefit lebih dibanding hanya jadi member." },
+      { question: "Tanggal Lahir", answer: "10 Mei 2004" },
+      { question: "Hobi", answer: "Aku senang membaca buku." },
+      { question: "Jurusan", answer: "Computer Science" },
+      { question: "MBTI (Myers-Briggs Type Indicator)", answer: "ENFP" },
+      { question: "Mata Kuliah Favorit", answer: "Aku sangat tertarik pada mata kuliah Algoprog dan Kalkulus." },
+      { question: "Mata Pelajaran yang Paling Menantang di Ilmu Komputer", answer: "Matematika Diskrit" },
+      { question: "Manajemen Waktu", answer: "Meskipun masih dalam tahap pengembangan, aku berusaha memperbaiki kesalahan dan fokus pada tugas masing-masing." },
+      { question: "Nilai yang Aku Peroleh dari Keanggotaan di BNCC", answer: "Aku mendapat banyak soft skills seperti keterampilan sosial dan kerjasama tim. Bekerja di BNCC, juga sudah mendekati lingkungan kerja profesional." },
+      { question: "Kutipan Favorit", answer: "\"You never know until you try.\"" }
+    ]
+  },
+  {
+    id: "004",
+    data: [
+      { nama: "Phoebe Patricia Wibowo", jabatan: "External Event Organizer Staff", angkatan: "B26" },
+      { question: "Umur", answer: 19 },
+      { question: "Tempat, tanggal lahir", answer: "Jakarta, 7 November 2004" },
+      { question: "Jurusan", answer: "Data Science" },
+      { question: "Hobi", answer: "\"SOCS sampe mati\"" },
+      { question: "Matkul Kesukaan", answer: "Algoprog" },
+      { question: "Kenapa Join BNCC", answer: "Aku ingin meningkatkan portofolio dan keterampilan aku." },
+      { question: "MBTI", answer: "ISTP" },
+      { question: "Bisa bahasa pemrograman", answer: "C, Python, Java, SQL, HTML" },
+      { question: "Sebelum masuk Binus udah pernah belajar pemrograman?", answer: "Ya, aku pernah belajar pemrograman sejak kecil." }
+    ]
+  },  
+  {
+    id: "005",
+    data: [
+      { nama: "Bryan Nicky Lehman", jabatan: "Human Resource Deveopment Staff", angkatan: "B26" },
+      { question: "Panggilan", answer: "Bryan / BN / Bry" },
+      { question: "Umur", answer: 19 },
+      { question: "Tempat, tanggal lahir", answer: "Jakarta, 16 April 2004" },
+      { question: "Jurusan", answer: "System Informatika" },
+      { question: "Hobi", answer: "Tidur dan makan" },
+      { question: "Matkul Kesukaan", answer: "UI UX (HCI)" },
+      { question: "Kenapa Pilih Jurusan", answer: "Aku ingin masuk ke bidang yang berhubungan dengan komputer tapi saat SMA jurusan aku IPS, jadi salah satunya jurusan kuliah yang bisa aku masuk adalah System Informatika." },
+      { question: "Pengalaman dari BNCC", answer: "Aku mendapatkan pengalaman dalam public speaking, memperluas koneksi, dan berkenalan dengan teman-teman dari berbagai jurusan." },
+      { question: "Skill baru dari BNCC", answer: "Aku belajar menggunakan Figma dan meningkatkan kemampuan manajemen waktu." },
+      { question: "Kenapa Join BNCC", answer: "BNCC adalah organisasi yang paling menonjol di kampus ini. Aku ingin mendapatkan pengalaman baru dan memperluas wawasan." },
+      { question: "LnT", answer: "Aku memilih fokus pada backend karena aku ingin mempelajari lebih banyak tentang aspek backend dalam pengembangan software." },
+      { question: "Bisa bahasa pemrograman", answer: "Java, SQL, dan Python" },
+      { question: "Selain BNCC, apa lagi", answer: "Aku juga terlibat di IT DIV dan PO." },
+      { question: "Makanan Favorit", answer: "Indomie" },
+      { question: "Time Management", answer: "Berkat pengalaman di BNCC, aku berhasil mengelola waktu dengan baik meskipun ikut serta di IT DIV dan PO." }
+    ]
+  },  
+  {
+    id: "006",
+    data: [
+      { nama: "Alvin Ray Winston", panggilan: "Ray",  jabatan: "Research and Development Staff", angkatan: "B26" },
+      { question: "Panggilan", answer: "Bryan / BN / Bry" },
+      { question: "Umur", answer: 19 },
+      { question: "Tempat, tanggal lahir", answer: "Medan, 13 Juli 2004" },
+      { question: "Jurusan", answer: "Cybersecurity" },
+      { question: "Hobi", answer: "Mendengarkan musik (kecuali rock) dan menonton film." },
+      { question: "Film paling berkesan", answer:"Genre film favoritku adalah sci-fi, terutama yang berkaitan dengan time travel." },
+      {question: "Alasan Masuk BNCC", answer : "Awalnya aku tertarik dengan mobile development, tapi akhirnya beralih ke cybersecurity karena melihat prospek karir yang menjanjikan."},
+      { question: "Matkul Kesukaan", answer: "Algoprog dan Calculus" },
+      { question: "Matkul paling dibenci", answer: "Basic Statistics" },
+      { question: "Pendapat tentang memilih cybersecurity", answer: "Meskipun agak kurang pas dengan minat awalku, aku memutuskan untuk melanjutkan studi di bidang cybersecurity." },
+      { question: "Pengalaman paling menarik", answer: "Mengerjakan tugas Character Building." },
+      { question: "Pengalaman dari BNCC", answer: "Selama setahun bergabung, aku memperoleh banyak keterampilan teknis dan kemampuan berkomunikasi." },
+      { question: "Kenapa Join BNCC", answer: "Aku bergabung dengan BNCC untuk mengikuti Course LnT, mencari pengalaman, dan membangun koneksi dengan orang-orang di bidang yang sama." },
+      { question: "LnT", answer: "Mobile Development" },
+      { question: "Quest", answer: "Membuat mockup dan kalkulator" },
+      { question: "Bisa bahasa pemrograman", answer: "Python" },
+      { question: "Selain BNCC, apa lagi", answer: "Tidak ada." },
+      { question: "Time Management", answer: "Aku menggunakan manajemen waktu dengan bijaksana untuk menyeimbangkan antara kuliah, BNCC, dan kegiatan lainnya." }
+    ], 
+  },  
+  {
+    id: "007",
+    data: [
+      { nama: "Ryan Nathanael Budisetiawan", jabatan: "Public Relations Staff", angkatan: "B26" },
+      { question: "Panggilan", answer: "Bryan / BN / Bry" },
+      { question: "Umur", answer: 19 },
+      { question: "Tempat, tanggal lahir", answer: "Jakarta, 2 Maret 2004"},
+      { question: "Jurusan", answer: "Computer Science" },
+      { question: "Hobi", answer: "Menonton film, mendengarkan musik, berolahraga basket" },
+      {question: "Suka film genre apa aja", answer:"Drama, action, filler" },
+      {question:"Asal SMA", answer : "Kanesius Jakarta"},
+      {question:"Ada teman SMA yang di compsci atay tidak", answer: "Tidak banyak teman yang masuk di jurusan Computer Science"},
+      { question: "Matkul Paling Dibenci", answer: "Algorithm and Programming" },
+      { question: "Struggle di BNCC", answer: "Kesulitan mengelola waktu karena kegiatan di BNCC sangat padat dan harus fokus pada banyak hal." },
+      { question: "Pengalaman dari BNCC", answer: "Bergabung di BNCC untuk memperluas jaringan relasi dan meningkatkan pengetahuan tentang komputer." },
+      { question: "Kenapa Join BNCC", answer: "Bergabung dengan BNCC untuk memperluas jaringan relasi dan meningkatkan pengetahuan tentang komputer." },
+      { question: "“Semester 1 Menderita Ga?”", answer: "Tidak terlalu menderita, tapi masih menyesuaikan diri dengan transisi dari SMA ke kuliah." },
+      { question: "LnT", answer: "Java Programming" },
+      { question: "Bisa Bahasa Pemrograman", answer: "C" },
+      { question: "Sebelum Masuk Computer Science Pernah Belajar Coding?", answer: "Iya, pernah belajar C++ di SMA dan coding Arduino." },
+      { question: "Selain BNCC Apa Lagi", answer: "Tidak ada. Sebelumnya bergabung dengan HIMTI tapi berhenti." },
+      { question: "Jika Harus Mengulang Semester 1, Apa yang Akan Dilakukan", answer: "Lebih fokus belajar, bisa mengatur waktu dengan lebih baik. Sudah lebih baik di semester 2 karena sudah lebih menyesuaikan diri." }
+    ], 
+  },
+  {
+    id: "008",
+    data: [
+      { nama: "Jones Alvin", jabatan: "Learning and Training Staff", angkatan: "B26" },
+      { question: "Panggilan", answer: "Vin/Jones" },
+      { question: "Umur", answer: 20 },
+      { question: "Tempat, tanggal lahir", answer: "Jakarta, 9 Mei 2003"},
+      { question: "Jurusan", answer: "Sistem Informasi" },
+      { question: "Hobi", answer: "Bermain game, menonton drama Korea, China, dan Thailand" },
+      { question: "Pengalaman di Jurusan Sistem Informasi", answer: "Belum memiliki pengalaman spesial." },
+      { question: "Keanggotaan BNCC", answer: "Bergabung karena tertarik dengan sponsor dan kegiatan BNCC." },
+      { question: "Kesimpulan Mengesankan", answer: "Pengalaman terbaikku adalah menjadi aktivis di BNCC." },
+      { question: "Tipe Kepribadian", answer: "INFJ" },
+      { question: "Cara Mengatasi Tantangan di BNCC dan Kuliah", answer: "Mencoba menghindari pekerjaan last-minute dan memberi hadiah pada diriku sendiri setelah menyelesaikan tugas." },
+      { question: "Course LnT", answer: "Pengembangan aplikasi mobile" },
+      { question: "Organisasi Lain", answer: "Tidak bergabung dengan organisasi di sekolah, mulai aktif saat kuliah." },
+      { question: "Pengalaman Coding", answer: "Mulai belajar coding dari pelajaran informatika di SMA menggunakan Pascal." },
+      { question: "Jabatan di BNCC", answer: "Staff LnT" }
+    ]    
   }
+  
 ];
