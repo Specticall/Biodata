@@ -71,7 +71,7 @@ export const userBiodata = [
   {
     id: "005",
     data: [
-      { nama: "Bryan Nicky Lehman", jabatan: "Human Resource Deveopment Staff", angkatan: "B26" },
+      { nama: "Bryan Nicky Lehman", jabatan: "Human Resource Development Staff", angkatan: "B26" },
       { question: "Panggilan", answer: "Bryan / BN / Bry" },
       { question: "Umur", answer: 19 },
       { question: "Tempat, tanggal lahir", answer: "Jakarta, 16 April 2004" },
@@ -156,6 +156,31 @@ export const userBiodata = [
       { question: "Pengalaman Coding", answer: "Mulai belajar coding dari pelajaran informatika di SMA menggunakan Pascal." },
       { question: "Jabatan di BNCC", answer: "Staff LnT" }
     ]    
-  }
+  },
+  {
+    id: "009",
+    data :[
+      { nama: "Victoria Tjandra", jabatan: "Staff FILE", angkatan: "B26" },
+      { question: "Panggilan", answer: "Vicky" },
+      { question: "Umur", answer: 18 },
+      { question: "Tempat, Tanggal Lahir", answer: "Jakarta, 15 September 2004" },
+      { question: "Jurusan", answer: "Computer Science" },
+      { question: "Alasan masuk", answer: "Awalnya direkomendasikan oleh orang tua, tapi sekarang merasa nyaman di sini." },
+      { question: "Hobi", answer: "Menggambar dan mendengarkan lagu." },
+      { question: "Alasan suka gambar", answer: "Suka menggambar sejak kecil, ini menjadi cara untuk mengatasi stres." },
+      { question: "Matkul Kesukaan", answer: "Human-Computer Interaction (HCI)" },
+      { question: "Matkul paling dibenci", answer: "Algoritma Programming." },
+      { question: "Struggle di BNCC", answer: "Manajemen waktu" },
+      { question: "Pengalaman dari BNCC", answer: "Memperoleh banyak pengalaman berharga, terutama dalam hal desain." },
+      { question: "Kenapa Join BNCC", answer: "Bergabung untuk mengembangkan keterampilan desain dan memperluas jaringan profesional." },
+      { question: "LnT", answer: "Front-end (tahun ini memilih UI/UX)" },
+      { question: "Quest", answer: "Backend (membuat kalkulator) dan poster" },
+      { question: "MBTI", answer: "INTJ" },
+      { question: "Bisa bahasa pemrograman", answer: "HTML & CSS" },
+      { question: "Selain BNCC apa lagi", answer: "Terlibat di KMBD" },
+      { question: "Makanan favorit", answer: "Sushi" },
+      { question: "Time management", answer: "Sedang belajar mengatur waktu dengan lebih efisien untuk membagi aktivitas di BNCC dan kuliah." }
+    ],
   
+  }
 ];

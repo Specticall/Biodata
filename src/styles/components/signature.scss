@@ -1,0 +1,38 @@
+.content-container {
+  position: relative;
+}
+
+.signature {
+  position: absolute;
+  min-width: 8rem;
+  width: 20vw;
+  max-width: 13rem;
+  aspect-ratio: 1;
+
+  // background-color: var(--clr-blue);
+  right: 3rem;
+
+  top: -5rem;
+  // padding: 2rem;
+
+  z-index: 1;
+  border-radius: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    object-position: 50% 50%;
+  }
+
+  @include max-width(tablet) {
+    // position: relative;
+    top: 17rem;
+  }
+
+  @include max-width(phone) {
+    // position: relative;
+    top: 19rem;
+  }
+}

@@ -55,11 +55,24 @@ export default function Biodata({
     );
   };
 
+  const currentUser = userData.find(
+    (data) => data.id === selectedUser
+  );
+
   return (
     <main className="page__biodata" data-scroll-section>
       <TitleQnA {...props} />
       <div className="content-container">
         <NavQnA {...props} />
+        {currentUser.signature ? (
+          <div
+            className="signature"
+            data-scroll
+            data-scroll-speed="3"
+          >
+            <img src={currentUser?.signature} alt="" />
+          </div>
+        ) : null}
         <CardQnA {...props} />
       </div>
     </main>
