@@ -261,7 +261,7 @@
         background-color: var(--clr-blue);
 
         transition: transform var(--animation-primary);
-        transform: scale(0.001, 1);
+        transform: scale(0, 1);
 
         transform-origin: right;
       }

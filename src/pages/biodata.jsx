@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 export default function Biodata({
   userBiodata,
@@ -9,9 +8,6 @@ export default function Biodata({
 }) {
   const cardRef = useRef([]);
   const [isVisible, setIsVisible] = useState([]);
-  // const [selectedUser, setSelectedUser] = useState("001");
-
-  // console.log(scroll.init);
 
   // Find the biodata from the selected user ID
   const currentBiodata =
@@ -28,7 +24,6 @@ export default function Biodata({
   };
 
   useEffect(() => {
-    // console.log("RENDER");
     const elements = document.querySelectorAll(".biodata");
 
     const observer = new IntersectionObserver((entries) => {
@@ -48,16 +43,7 @@ export default function Biodata({
     );
 
     return () => {
-      // console.log("run");
-
       observer.disconnect();
-      // elements?.forEach((current) =>
-      //   observer.unobserve(current)
-      // );
-
-      // console.log(elements);
-
-      // cardRef.current = [];
     };
   }, [selectedUser]);
 
@@ -70,7 +56,7 @@ export default function Biodata({
   };
 
   return (
-    <main className="page__biodata">
+    <main className="page__biodata" data-scroll-section>
       <TitleQnA {...props} />
       <div className="content-container">
         <NavQnA {...props} />

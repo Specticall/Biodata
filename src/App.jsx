@@ -1,10 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { userBiodata } from "./data/data";
 import Biodata from "./pages/biodata";
-import {
-  LocomotiveScrollProvider,
-  useLocomotiveScroll,
-} from "react-locomotive-scroll";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 import { userData } from "./data/navData";
 
@@ -21,7 +18,15 @@ function App() {
 
   return (
     <LocomotiveScrollProvider
-      options={{ smooth: true }}
+      options={{
+        smooth: true,
+        mobile: {
+          smooth: false,
+        },
+        tablet: {
+          smooth: false,
+        },
+      }}
       watch={[selectedUser]}
       containerRef={containerRef}
       reloadOnContextChange={true}
