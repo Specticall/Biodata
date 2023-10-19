@@ -3,10 +3,15 @@ import { useEffect, useRef, useState } from "react";
 export default function Biodata({ userBiodata, userData }) {
   const cardRef = useRef([]);
   const [isVisible, setIsVisible] = useState([]);
-  const [selectedUser, setSelectedUser] = useState("001");
+  const [selectedUser, setSelectedUser] = useState("002");
+
+  // Find the biodata from the selected user ID
+  const currentBiodata =
+    userBiodata.find((user) => user.id === selectedUser)
+      ?.data || [];
 
   const props = {
-    userBiodata,
+    userBiodata: currentBiodata,
     cardRef,
     isVisible,
     userData,
@@ -16,7 +21,7 @@ export default function Biodata({ userBiodata, userData }) {
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      const inView = entries.map((entry) =>
+      const inView = entries?.map((entry) =>
         entry.isIntersecting
           ? entry.target.classList[2]
           : null
@@ -27,15 +32,15 @@ export default function Biodata({ userBiodata, userData }) {
       );
     });
 
-    cardRef.current.forEach((current) =>
+    cardRef.current?.forEach((current) =>
       observer.observe(current)
     );
 
     return () =>
-      cardRef.current.forEach((current) =>
+      cardRef.current?.forEach((current) =>
         observer.unobserve(current)
       );
-  }, []);
+  }, [selectedUser]);
 
   const toggleVisibility = (element) => {
     setIsVisible((current) =>
@@ -98,7 +103,7 @@ function NavQnA({
   );
 }
 
-function TitleQnA({ userBiodata }) {
+function TitleQnA({ userBiodata = [] }) {
   return (
     <article
       className="biodata-heading"
@@ -110,23 +115,24 @@ function TitleQnA({ userBiodata }) {
           <p className="top">
             <span>Nama:</span>
             <p className="year">
-              {userBiodata[0].angkatan}
+              {userBiodata[0]?.angkatan}
             </p>
           </p>
           <h1 className="name" data-scroll>
-            {userBiodata[0].nama}.
+            {userBiodata[0]?.nama}.
           </h1>
           <div className="bottom">
             <p className="position">
-              {userBiodata[0].jabatan}
-              <i className="bx bx-chevron-right"></i>
+              <div className="position-content">
+                {userBiodata[0]?.jabatan}
+                <i className="bx bx-chevron-right"></i>
+              </div>
             </p>
             <p className="copyright">
               © Joseph Christian Yusmita - 2702295695
             </p>
           </div>
         </header>
-        <div className="secondary"></div>
       </div>
     </article>
   );
