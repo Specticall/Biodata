@@ -161,6 +161,8 @@
   }
 
   @include max-width(phone) {
+    overflow: hidden;
+
     .accordion-container {
       div {
         grid-template-columns: repeat(2, 1fr);

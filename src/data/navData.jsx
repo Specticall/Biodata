@@ -3,6 +3,7 @@ import signatureBryan from "../assets/bryan.png";
 import signaturePhoebe from "../assets/phoebe.jpg";
 import signatureRyan from "../assets/ryan.png";
 import signatureVictoria from "../assets/victoria.png";
+import signatureAlvin from "../assets/alvin.png";
 
 export const userData = [
   {
@@ -31,6 +32,7 @@ export const userData = [
   {
     name: "Alvin",
     id: "006",
+    signature: signatureAlvin,
   },
   {
     name: "Ryan",
